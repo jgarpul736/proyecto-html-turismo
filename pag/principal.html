@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Turismo Granada</title>
+  <link rel="stylesheet" href="../css/styles.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Swiper CSS y JS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha512-sA+e2+...==" crossorigin=""/>
+
+</head>
+<body>
+  <!-- Parte 1 -->
+  <header class="hero">
+    <nav class="nav">
+
+      <div class="nav__container">
+        <img class="imagen__nav" src="../img/logo.png" alt="Logo">
+        <a href="#" class="nav__logo">GRANADA</a>
+
+        <!-- Buscador -->
+        <div class="nav__search">
+          <form action="">
+            <input type="search" placeholder="Buscar...">
+            <i class="fa fa-search"></i>
+          </form>
+        </div>
+
+      </div>
+    </nav>
+
+  <video autoplay muted loop class="hero__video">
+    <source src="../img/video.mp4" type="video/mp4" />
+    <img src="../img/imagenparte4.jpg" alt="Vista previa">
+  </video>
+</header>
+
+
+
+<!-- Parte 2 -->
+<section class="features">
+  <div class="card-container">
+    <div class="card">
+      <span><i class="fas fa-futbol"></i> DEPORTE</span>
+       <br><br>
+      Granada ofrece una vibrante escena deportiva con equipos de fútbol como el Granada CF y opciones como baloncesto, senderismo y esquí en Sierra Nevada.
+    </div>
+    
+    <div class="card">
+      <span><i class="fas fa-landmark"></i> CULTURA</span>
+       <br><br>
+      La ciudad destaca por su rica herencia histórica y cultural: la Alhambra, el Albaicín y una gran cantidad de festivales tradicionales la definen.
+    </div>
+    
+    <div class="card">
+      <span><i class="fas fa-tree"></i> NATURALEZA</span>
+      <br><br>
+      Desde Sierra Nevada hasta los parques naturales y el río Genil, Granada es un paraíso para los amantes del aire libre y el ecoturismo.
+    </div>
+    
+    <div class="card">
+      <span><i class="fas fa-utensils"></i> GASTRONOMÍA</span>
+      <br><br>
+      Tapas gratis con la bebida, platos como las habas con jamón o el remojón granadino hacen de la cocina granadina una experiencia única.
+    </div>
+  </div>
+</section>
+
+<!-- Parte 3 -->
+<section class="contenedor mt-5 nosotros">
+
+<section class="parallax sierra">
+  <div class="content">
+    <h1>Sierra Nevada</h1>
+    <p>Nieve, montaña y naturaleza en estado puro.</p>
+  </div>
+</section>
+
+<section class="parallax playa">
+  <div class="content">
+    <h1>Playas de Granada</h1>
+    <p>Sol, mar y relax en la Costa Tropical.</p>
+  </div>
+</section>
+</section>
+
+<!-- Parte 4 -->
+<h1 class="texto__lugares">Lugares más emblemáticos de Granada</h1>
+
+<section class="galeria">
+  <div class="galeria__item">
+    <img src="../img/alhambra.webp" alt="Alhambra" class="galeria__img" />
+    <span class="galeria__caption">Alhambra</span>
+  </div>
+  <div class="galeria__item">
+    <img src="../img/miradorsannicolas.jpg" alt="Mirador de San Nicolás" class="galeria__img" />
+    <span class="galeria__caption">Mirador de San Nicolás</span>
+  </div>
+  <div class="galeria__item">
+    <img src="../img/generalife.jpg" alt="Generalife" class="galeria__img" />
+    <span class="galeria__caption">Generalife</span>
+  </div>
+  <div class="galeria__item">
+    <img src="../img/albaicin.jpg" alt="Albaicín" class="galeria__img" />
+    <span class="galeria__caption">Albaicín</span>
+  </div>
+  <div class="galeria__item">
+    <img src="../img/capillareal.jpg" alt="Capilla Real de Granada" class="galeria__img" />
+    <span class="galeria__caption">Capilla Real de Granada</span>
+  </div>
+</section>
+
+<h1 class="texto__lugares">y su ubicación</h1>
+<div id="map"></div>
+
+<!-- Parte 5 -->
+<section class="curiosidades-section">
+  <h2 class="curiosidades-title">¿Sabías que...?</h2>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">La Alhambra estuvo a punto de ser demolida en el siglo XIX.</div>
+      <div class="swiper-slide">Granada fue el último bastión musulmán de la península, rendida en 1492.</div>
+      <div class="swiper-slide">Federico García Lorca nació en un pequeño pueblo cerca de Granada.</div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+
+<!-- Parte 6 -->
+<footer class="footer">
+  <div class="container__footer">
+    <div class="footer-row">
+
+      <div class="footer-links">
+        <h4>Sobre Granada</h4>
+        <ul>
+          <li><a href="#">Historia</a></li>
+          <li><a href="#">Lugares emblemáticos</a></li>
+          <li><a href="#">Cultura y tradiciones</a></li>
+          <li><a href="#">Gastronomía</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-links">
+        <h4>Información útil</h4>
+        <ul>
+          <li><a href="#">Cómo llegar</a></li>
+          <li><a href="#">Transporte público</a></li>
+          <li><a href="#">Oficinas de turismo</a></li>
+          <li><a href="#">Mapa de la ciudad</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="#">Quiénes somos</a></li>
+          <li><a href="#">Política de privacidad</a></li>
+          <li><a href="#">Colabora con nosotros</a></li>
+          <li><a href="#">Aviso legal</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Compañía</h4>
+        <div class="social-link">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha512-kZPp...==" crossorigin="" ></script>
+<script src="../script.js"></script>
+
+</body>
+</html>
